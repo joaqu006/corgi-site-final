@@ -1,0 +1,206 @@
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url(../font/BebasNeue.otf);
+}
+.invisible {
+  height: 1px;
+}
+
+/* ----------------- Start Grid for mobile screens ----------------- */
+
+@media (max-width: 599px) {
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px; /* max width of content */
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* ----------------- Start Personalizating ----------------- */
+
+.five img {
+  position: relative;
+  left: 50%;
+  margin-left: 50px;
+  transform: rotate(90deg);
+  width: 300px;
+  box-sizing: border-box;
+  top: -60px;
+}
+
+.one p {
+  position: relative;
+  left: 50%;
+  margin-left: -85px;
+  top: 145px;
+  color: white;
+  font-size: 150px;
+  font-family: "BebasNeue";
+  text-shadow: 3.5px 3.5px  black;
+  vertical-align: center;
+  box-sizing: border-box;
+}
+
+.one img {
+  position: relative;
+  left: 50%;
+  margin-left: -95px;
+  top: 400px;
+  width: 200px;
+  padding-top: 100px;
+
+}
+
+#corgi {
+  position: relative;
+  left: 50%;
+  margin-left: -120px;
+  width: 375px;
+  margin-top: 100px;
+  padding-top: 60px;
+  padding-bottom: 30px; 
+  box-sizing: border-box;
+}
+
+#head {
+  position: relative;  
+  transform: rotate(-180deg);
+  left: 50%;
+  margin-left: 400px;
+  padding-bottom: 50px;
+}
+
+.seven {
+  position: relative;
+  padding-top: 50px;
+  left: -100px;
+  top: -300px;
+  color: white;
+  font-size: 120px;
+  font-family: "BebasNeue";
+  text-shadow: 3px 3px  black;
+  vertical-align: center;
+  line-height: 90%;
+  text-align: center;
+}
+
+/* ----------------- End Personalizating ----------------- */
+
+}
+
+/* ----------------- End Grid for mobile screens ----------------- */
+
+/* ----------------- Start Grid for desktop screens ----------------- */
+
+@media (min-width: 600px) and (max-width: 959px) {
+.container {
+  position: relative;
+  width: 100%; /* max width of content (fixed width) - flexible width = set to 100% */
+  margin: 0 auto; /* short cut to make right and left margins equal */
+  padding: 0 20px;
+  box-sizing: border-box; } /* to ensure padding doesn't effect size of container */
+
+/* ----------------- Start Personalization ------------------*/
+
+.five img {
+  position: relative;
+  left: 50%;
+  margin-left: -120px;
+  width: 435px;
+  margin-top: 15px;
+}
+
+.one p {
+  color: white;
+  font-size: 200px;
+  font-family: "BebasNeue";
+  text-shadow: 3.5px 3.5px  black;
+  position: relative;
+  top: -50px;
+  left: 75px;
+}
+
+.one img {
+  position: relative;
+  width: 235.695px;
+  top: 400px;
+  left: 70px;
+}
+
+#corgi {
+  position: relative;
+  left: 50%;
+  margin-left: -250px;
+  width: 600px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+
+.seven {
+  position: relative;
+  left: 20px;
+  color: white;
+  font-size: 160px;
+  font-family: "BebasNeue";
+  text-shadow: 3px 3px  black;  
+  margin-top: -40px;
+  line-height: 90%;
+  text-align: center;
+}
+
+/* ----------------- End Personalization ------------------*/
+
+}
+
+  .column,
+  .columns {
+    margin-left: 4.34782609%; /* column gutter */
+    float: left;
+    box-sizing: border-box; }    
+  
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; } /* prevents first column from acquiring a gutter on its left: typography 101 */
+
+  .one.column,
+  .one.columns                    { width: 4.34782609%;  }
+  .two.columns                    { width: 13.04347827%; }
+  .three.columns                  { width: 21.73913045%; }
+  .four.columns                   { width: 30.43478263%; }
+  .five.columns                   { width: 39.13043481%; }
+  .six.columns                    { width: 47.82608699%; }
+  .seven.columns                  { width: 56.52173917%; }
+  .eight.columns                  { width: 65.21739135%; } 
+  .nine.columns                   { width: 73.91304353%; }
+  .ten.columns                    { width: 82.60869571%; }
+  .eleven.columns                 { width: 91.30434789%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.43478263%; }
+  .two-thirds.column              { width: 65.21739135%; }
+
+  .one-half.column                { width: 47.82608699%; }
+}
+
+/* ----------------- End Grid for desktop screens ----------------- */
+
+/* ----------------- Misc Grid Commands ----------------- */
+
+/* Self Clearing Goodness: Fixes Issues with Float: Left; */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
